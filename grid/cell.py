@@ -1,10 +1,9 @@
-class Cell:
+class Cell(object):
 
     width = 0
-    cell_rows = 5
 
     def __init__(self, value=''):
-        self.__value = value
+        self.__value = str(value)
         Cell.width = len(str(value))
 
     @property
